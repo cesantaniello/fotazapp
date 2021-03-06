@@ -9,14 +9,14 @@ from posts import views
 urlpatterns = [
 
     path(
-        route='',
-        view=views.list_posts,
-        name='feed'
+        route = '',
+        view = views.PostsFeedView.as_view(),
+        name = 'feed'
     ),
 
     path(
-        route='posts/new/',
-        view=views.create_post,
-        name='create'
+        route = 'posts/new/',
+        view = views.create_post,
+        name = 'create'
     ),
 ]
