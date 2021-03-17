@@ -2,6 +2,7 @@
 
 # Django
 from django.urls import path
+from django.views.generic import TemplateView
 
 # Views
 from posts import views
